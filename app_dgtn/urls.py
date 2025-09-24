@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', include('admin_honeypot.urls')),
-    path('', admin.site.urls),
+    path('access/', admin.site.urls),
     
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
